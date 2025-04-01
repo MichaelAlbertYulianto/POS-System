@@ -5,6 +5,7 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
 ## Services
 
 ### 1. Product Catalog Service (Port: 5001)
+
 - Manages products and categories
 - Endpoints:
   * GET /products - List all products
@@ -15,6 +16,7 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
   * Similar endpoints for /categories
 
 ### 2. Customer Service (Port: 5002)
+
 - Manages customer information
 - Endpoints:
   * GET /customers - List all customers
@@ -24,6 +26,7 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
   * DELETE /customers/{id} - Delete customer
 
 ### 3. Sales Service (Port: 5003)
+
 - Manages sales transactions
 - Integrates with Product Catalog and Customer services
 - Endpoints:
@@ -32,49 +35,44 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
   * POST /sales - Create new sale
 
 ## Technology Stack
+
 - .NET 9.0
 - MongoDB
 - Docker & Docker Compose
 - Swagger/OpenAPI
 
 ## Project Structure
-`
-POS System/
-+-- Play.Catalog/            # Product Catalog Service
-+-- Play.Customer/           # Customer Service
-+-- Play.Sales/             # Sales Service
-+-- Play.Common/            # Shared Library
-+-- Play.Infra/             # Infrastructure (Docker Compose)
-+-- scripts/                # Utility Scripts
-`
+
+`POS System/ +-- Play.Catalog/            # Product Catalog Service +-- Play.Customer/           # Customer Service +-- Play.Sales/             # Sales Service +-- Play.Common/            # Shared Library +-- Play.Infra/             # Infrastructure (Docker Compose) +-- scripts/                # Utility Scripts`
 
 ## Getting Started
 
 ### Prerequisites
+
 - .NET 9.0 SDK
 - Docker Desktop
 - MongoDB (via Docker)
 
 ### Running the Services
 
-1. Start the services using the convenience script:
-   `powershell
-   .\scripts\start-services.ps1
-   `
-
+1. Start the services :
+   - Product Catalog Service: `dotnet run --project Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj`
+   - Customer Service: `dotnet run --project Play.Customer/src/Play.Customer.Service/Play.Customer.Service.csproj`
+   - Sales Service: `dotnet run --project Play.Sales/src/Play.Sales.Service/Play.Sales.Service.csproj`
 2. Access Swagger UI:
+
    - Catalog Service: http://localhost:5001/swagger
    - Customer Service: http://localhost:5002/swagger
    - Sales Service: http://localhost:5003/swagger
 
 ### Running with Docker Compose
-`ash
-docker-compose -f Play.Infra/docker-compose.yml up -d
-`
+
+`ash docker-compose -f Play.Infra/docker-compose.yml up -d `
 
 ## Data Models
 
 ### Product Catalog Service
+
 - Products:
   * ProductId (Guid)
   * ProductName (string)
@@ -87,6 +85,7 @@ docker-compose -f Play.Infra/docker-compose.yml up -d
   * CategoryName (string)
 
 ### Customer Service
+
 - Customers:
   * CustomerId (Guid)
   * CustomerName (string)
@@ -95,12 +94,13 @@ docker-compose -f Play.Infra/docker-compose.yml up -d
   * Address (string)
 
 ### Sales Service
+
 - Sales:
   * SaleId (Guid)
   * CustomerId (Guid)
   * SaleDate (DateTimeOffset)
   * TotalAmount (decimal)
-  * Items (List<SaleItem>)
+  * Items (List`<SaleItem>`)
 - SaleItems:
   * ProductId (Guid)
   * Quantity (int)
@@ -109,6 +109,7 @@ docker-compose -f Play.Infra/docker-compose.yml up -d
 ## Architecture
 
 The system follows a microservices architecture with:
+
 - Independent services with their own databases
 - Service-to-service communication via HTTP
 - Shared common library for MongoDB integration
