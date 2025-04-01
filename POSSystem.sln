@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Catalog", "Play.Catalog", "{12B7E1E8-EFD1-49F5-AC47-D55FB6766269}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0BC38E27-6FDC-4A92-B9B9-D1C90115BAA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Service", "Play.Catalog\src\Play.Catalog.Service\Play.Catalog.Service.csproj", "{AD6173E0-8D40-431B-A565-D84573433328}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Customer", "Play.Customer", "{46A9A69C-9103-4F12-AB73-FAD48597E1EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{90DCF098-04B6-4181-B045-EA6BDA55508D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Customer.Service", "Play.Customer\src\Play.Customer.Service\Play.Customer.Service.csproj", "{79BF9972-701F-4388-ACE5-75612BEDFC39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Sales", "Play.Sales", "{E5B3E687-AA96-484E-B5EC-2B1D18094174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{33071B54-17F5-47D7-9B4A-8524241B88C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Sales.Service", "Play.Sales\src\Play.Sales.Service\Play.Sales.Service.csproj", "{CE510DF2-5672-4BB6-95CA-9C15898A1CD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Play.Common", "Play.Common", "{B5B5A7AF-1267-429D-B5D6-A14122BE5952}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0C66D846-E9A3-4FF7-B2FA-95DF64430800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Common", "Play.Common\src\Play.Common\Play.Common.csproj", "{2F6A226F-65CB-48D7-8511-AEE0E14AB078}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD6173E0-8D40-431B-A565-D84573433328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6173E0-8D40-431B-A565-D84573433328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6173E0-8D40-431B-A565-D84573433328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6173E0-8D40-431B-A565-D84573433328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79BF9972-701F-4388-ACE5-75612BEDFC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BF9972-701F-4388-ACE5-75612BEDFC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BF9972-701F-4388-ACE5-75612BEDFC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BF9972-701F-4388-ACE5-75612BEDFC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE510DF2-5672-4BB6-95CA-9C15898A1CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE510DF2-5672-4BB6-95CA-9C15898A1CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE510DF2-5672-4BB6-95CA-9C15898A1CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE510DF2-5672-4BB6-95CA-9C15898A1CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6A226F-65CB-48D7-8511-AEE0E14AB078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6A226F-65CB-48D7-8511-AEE0E14AB078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6A226F-65CB-48D7-8511-AEE0E14AB078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6A226F-65CB-48D7-8511-AEE0E14AB078}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BC38E27-6FDC-4A92-B9B9-D1C90115BAA0} = {12B7E1E8-EFD1-49F5-AC47-D55FB6766269}
+		{AD6173E0-8D40-431B-A565-D84573433328} = {0BC38E27-6FDC-4A92-B9B9-D1C90115BAA0}
+		{90DCF098-04B6-4181-B045-EA6BDA55508D} = {46A9A69C-9103-4F12-AB73-FAD48597E1EB}
+		{79BF9972-701F-4388-ACE5-75612BEDFC39} = {90DCF098-04B6-4181-B045-EA6BDA55508D}
+		{33071B54-17F5-47D7-9B4A-8524241B88C3} = {E5B3E687-AA96-484E-B5EC-2B1D18094174}
+		{CE510DF2-5672-4BB6-95CA-9C15898A1CD7} = {33071B54-17F5-47D7-9B4A-8524241B88C3}
+		{0C66D846-E9A3-4FF7-B2FA-95DF64430800} = {B5B5A7AF-1267-429D-B5D6-A14122BE5952}
+		{2F6A226F-65CB-48D7-8511-AEE0E14AB078} = {0C66D846-E9A3-4FF7-B2FA-95DF64430800}
+	EndGlobalSection
+EndGlobal

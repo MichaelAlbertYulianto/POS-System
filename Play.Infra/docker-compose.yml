@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodbdata:/data/db
+
+  catalog-service:
+    image: catalog-service
+    build:
+      context: ../
+      dockerfile: Play.Catalog/src/Play.Catalog.Service/Dockerfile
+    ports:
+      - "5001:8080"
+    depends_on:
+      - mongo
+    environment:
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Port=27017
+      - MongoDbSettings__DatabaseName=Catalog
+
+  customer-service:
+    image: customer-service
+    build:
+      context: ../
+      dockerfile: Play.Customer/src/Play.Customer.Service/Dockerfile
+    ports:
+      - "5002:8080"
+    depends_on:
+      - mongo
+    environment:
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Port=27017
+      - MongoDbSettings__DatabaseName=Customer
+
+  sales-service:
+    image: sales-service
+    build:
+      context: ../
+      dockerfile: Play.Sales/src/Play.Sales.Service/Dockerfile
+    ports:
+      - "5003:8080"
+    depends_on:
+      - mongo
+      - catalog-service
+      - customer-service
+    environment:
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Host=mongo
+      - MongoDbSettings__Port=27017
+      - MongoDbSettings__DatabaseName=Sales
+      - CatalogService__Url=http://catalog-service
+      - CustomerService__Url=http://customer-service
+
+volumes:
+  mongodbdata:
+

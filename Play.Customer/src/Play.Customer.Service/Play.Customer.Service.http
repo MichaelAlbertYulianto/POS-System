@@ -1,0 +1,6 @@
+@Play.Customer.Service_HostAddress = http://localhost:5241
+
+GET {{Play.Customer.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
