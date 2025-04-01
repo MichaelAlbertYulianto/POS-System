@@ -38,6 +38,7 @@ public class ProductsController : ControllerBase
     {
         var product = new Product
         {
+            Id = Guid.NewGuid(),
             Name = createProductDto.Name,
             CategoryId = createProductDto.CategoryId,
             Description = createProductDto.Description,

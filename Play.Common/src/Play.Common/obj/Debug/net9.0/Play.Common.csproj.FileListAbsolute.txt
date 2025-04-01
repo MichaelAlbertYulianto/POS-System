@@ -10,3 +10,4 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Common\src\Play.Commo
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Common\src\Play.Common\obj\Debug\net9.0\refint\Play.Common.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Common\src\Play.Common\obj\Debug\net9.0\Play.Common.pdb
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Common\src\Play.Common\obj\Debug\net9.0\ref\Play.Common.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Common\src\Play.Common\obj\Debug\net9.0\Play.Common.sourcelink.json

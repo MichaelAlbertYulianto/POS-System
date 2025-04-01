@@ -48,3 +48,4 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Sales\src\Play.Sales.
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Sales\src\Play.Sales.Service\bin\Debug\net9.0\ZstdSharp.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Sales\src\Play.Sales.Service\bin\Debug\net9.0\Play.Common.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Sales\src\Play.Sales.Service\bin\Debug\net9.0\Play.Common.pdb
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Sales\src\Play.Sales.Service\obj\Debug\net9.0\Play.Sales.Service.sourcelink.json

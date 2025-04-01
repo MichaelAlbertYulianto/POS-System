@@ -48,3 +48,4 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Customer\src\Play.Cus
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Customer\src\Play.Customer.Service\obj\Debug\net9.0\Play.Customer.Service.pdb
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Customer\src\Play.Customer.Service\obj\Debug\net9.0\Play.Customer.Service.genruntimeconfig.cache
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Customer\src\Play.Customer.Service\obj\Debug\net9.0\ref\Play.Customer.Service.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Customer\src\Play.Customer.Service\obj\Debug\net9.0\Play.Customer.Service.sourcelink.json

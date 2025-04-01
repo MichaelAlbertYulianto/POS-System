@@ -104,6 +104,7 @@ public class SalesController : ControllerBase
 
         var sale = new Sale
         {
+            Id = Guid.NewGuid(),
             CustomerId = createSaleDto.CustomerId,
             Items = saleItems,
             TotalAmount = totalAmount,

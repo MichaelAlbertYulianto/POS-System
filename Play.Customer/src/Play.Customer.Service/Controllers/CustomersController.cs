@@ -38,6 +38,7 @@ public class CustomersController : ControllerBase
     {
         var customer = new CustomerEntity
         {
+            Id = Guid.NewGuid(),
             Name = createCustomerDto.Name,
             ContactNumber = createCustomerDto.ContactNumber,
             Email = createCustomerDto.Email,

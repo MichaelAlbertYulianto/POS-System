@@ -48,3 +48,4 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Cata
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.pdb
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.genruntimeconfig.cache
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\ref\Play.Catalog.Service.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json

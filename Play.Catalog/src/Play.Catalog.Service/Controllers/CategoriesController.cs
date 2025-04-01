@@ -38,6 +38,7 @@ public class CategoriesController : ControllerBase
     {
         var category = new Category
         {
+            Id = Guid.NewGuid(),
             Name = createCategoryDto.Name,
             CreatedDate = DateTimeOffset.UtcNow
         };
