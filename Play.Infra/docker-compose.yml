@@ -20,9 +20,9 @@ services:
       - mongo
     environment:
       - MongoDbSettings__Host=mongo
-      - MongoDbSettings__Host=mongo
       - MongoDbSettings__Port=27017
       - MongoDbSettings__DatabaseName=Catalog
+      - ASPNETCORE_URLS=http://+:8080
 
   customer-service:
     image: customer-service
@@ -35,9 +35,9 @@ services:
       - mongo
     environment:
       - MongoDbSettings__Host=mongo
-      - MongoDbSettings__Host=mongo
       - MongoDbSettings__Port=27017
       - MongoDbSettings__DatabaseName=Customer
+      - ASPNETCORE_URLS=http://+:8080
 
   sales-service:
     image: sales-service
@@ -52,11 +52,24 @@ services:
       - customer-service
     environment:
       - MongoDbSettings__Host=mongo
-      - MongoDbSettings__Host=mongo
       - MongoDbSettings__Port=27017
       - MongoDbSettings__DatabaseName=Sales
-      - CatalogService__Url=http://catalog-service
-      - CustomerService__Url=http://customer-service
+      - CatalogService__Url=http://catalog-service:8080
+      - CustomerService__Url=http://customer-service:8080
+      - ASPNETCORE_URLS=http://+:8080
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8443:443"
+      - "9090:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - catalog-service
+      - customer-service
+      - sales-service
 
 volumes:
   mongodbdata:
