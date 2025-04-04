@@ -67,7 +67,7 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
 
 ### Running with Docker Compose
 
-`ash docker-compose -f Play.Infra/docker-compose.yml up -d `
+`docker-compose -f Play.Infra/docker-compose.yml up -d`
 
 ## Data Models
 
