@@ -1,5 +1,5 @@
 using Play.Sales.Service.Dtos;
-
+using System.Net.Http.Json;
 namespace Play.Sales.Service.Clients;
 
 public class CatalogClient
@@ -19,5 +19,11 @@ public class CatalogClient
             return await response.Content.ReadFromJsonAsync<ProductDto>();
         }
         return null;
+    }
+
+    public async Task<bool> UpdateProductAsync(Guid productId, UpdateProductDto updateProductDto)
+    {
+        var response = await httpClient.PutAsJsonAsync($"products/{productId}", updateProductDto);
+        return response.IsSuccessStatusCode;
     }
 }

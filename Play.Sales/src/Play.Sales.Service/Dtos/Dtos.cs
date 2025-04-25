@@ -1,5 +1,12 @@
 namespace Play.Sales.Service.Dtos;
 
+public record UpdateProductDto(
+    string Name,
+    Guid CategoryId,
+    decimal Price,
+    int StockQuantity,
+    string Description
+);
 public record SaleDto(
     Guid Id,
     Guid CustomerId,
@@ -30,7 +37,10 @@ public record CreateSaleItemDto(
 public record ProductDto(
     Guid Id,
     string Name,
-    decimal Price
+    Guid CategoryId,
+    decimal Price,
+    int StockQuantity,
+    string Description
 );
 
 public record CustomerDto(

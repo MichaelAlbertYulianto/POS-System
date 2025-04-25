@@ -11,12 +11,14 @@ builder.Services.AddMongo()
 // Configure service clients
 builder.Services.AddHttpClient<CatalogClient>(client =>
 {
-    client.BaseAddress = new Uri("http://catalog-service");
+    // client.BaseAddress = new Uri("http://catalog-service");
+    client.BaseAddress = new Uri("https://localhost:5001");
 });
 
 builder.Services.AddHttpClient<CustomerClient>(client =>
 {
-    client.BaseAddress = new Uri("http://customer-service");
+    // client.BaseAddress = new Uri("http://customer-service");
+    client.BaseAddress = new Uri("https://localhost:5002");
 });
 
 builder.Services.AddControllers(
