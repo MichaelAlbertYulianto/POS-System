@@ -1474,6 +1474,7 @@
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.0-*",
       "Play.Common >= 1.0.0",
+      "Polly.Extensions.Http >= 3.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1536,6 +1537,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.0-*, )"
+          },
+          "Polly.Extensions.Http": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

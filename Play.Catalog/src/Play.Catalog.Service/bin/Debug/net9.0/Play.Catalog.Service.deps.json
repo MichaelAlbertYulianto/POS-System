@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
           "Play.Common": "1.0.0",
+          "Polly.Extensions.Http": "3.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {

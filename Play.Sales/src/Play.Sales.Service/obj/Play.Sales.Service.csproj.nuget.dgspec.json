@@ -153,6 +153,10 @@
               "target": "Package",
               "version": "[9.0.0-*, )"
             },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.5.2, )"
