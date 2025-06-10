@@ -43,19 +43,22 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
 
 ## Project Structure
 
-`POS System/ +-- Play.Catalog/            # Product Catalog Service +-- Play.Customer/           # Customer Service +-- Play.Sales/             # Sales Service +-- Play.Common/            # Shared Library +-- Play.Infra/             # Infrastructure (Docker Compose) +-- scripts/                # Utility Scripts`
+* `POS System/ +-- Play.Catalog/`
+* `Product Catalog Service +-- Play.Customer/`
+* `Customer Service +-- Play.Sales/`
+* `Sales Service +-- Play.Common/`
 
 ## Getting Started
 
 ### Prerequisites
 
 - .NET 9.0 SDK
-- Docker Desktop
-- MongoDB (via Docker)
+- MongoDB
 
 ### Running the Services
 
 1. Start the services :
+
    - Product Catalog Service: `dotnet run --project Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj`
    - Customer Service: `dotnet run --project Play.Customer/src/Play.Customer.Service/Play.Customer.Service.csproj`
    - Sales Service: `dotnet run --project Play.Sales/src/Play.Sales.Service/Play.Sales.Service.csproj`
@@ -64,54 +67,4 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
    - Catalog Service: http://localhost:5001/swagger
    - Customer Service: http://localhost:5002/swagger
    - Sales Service: http://localhost:5003/swagger
-
-### Running with Docker Compose
-
-`docker-compose -f Play.Infra/docker-compose.yml up -d`
-
-## Data Models
-
-### Product Catalog Service
-
-- Products:
-  * ProductId (Guid)
-  * ProductName (string)
-  * CategoryId (Guid)
-  * Price (decimal)
-  * StockQuantity (int)
-  * Description (string)
-- Categories:
-  * CategoryId (Guid)
-  * CategoryName (string)
-
-### Customer Service
-
-- Customers:
-  * CustomerId (Guid)
-  * CustomerName (string)
-  * ContactNumber (string)
-  * Email (string)
-  * Address (string)
-
-### Sales Service
-
-- Sales:
-  * SaleId (Guid)
-  * CustomerId (Guid)
-  * SaleDate (DateTimeOffset)
-  * TotalAmount (decimal)
-  * Items (List`<SaleItem>`)
-- SaleItems:
-  * ProductId (Guid)
-  * Quantity (int)
-  * Price (decimal)
-
-## Architecture
-
-The system follows a microservices architecture with:
-
-- Independent services with their own databases
-- Service-to-service communication via HTTP
-- Shared common library for MongoDB integration
-- Docker containerization
-- RESTful API design
+     ## Data Models
