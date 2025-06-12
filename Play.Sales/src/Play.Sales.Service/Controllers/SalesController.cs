@@ -3,6 +3,8 @@ using Play.Sales.Service.Clients;
 using Play.Sales.Service.Dtos;
 using Play.Sales.Service.Entities;
 using Play.Common;
+using RabbitMQ.Client;
+using System.Text;
 
 namespace Play.Sales.Service.Controllers;
 
@@ -154,6 +156,27 @@ public class SalesController : ControllerBase
 
             // Step 5: Save the sale only if all stock updates were successful
             await salesRepository.CreateAsync(sale);
+            var factory = new ConnectionFactory { Uri = new Uri("amqp://guest:guest@localhost:5672") };
+            using var connection = await factory.CreateConnectionAsync();
+            using var channel = await connection.CreateChannelAsync();
+
+            await channel.QueueDeclareAsync(
+                queue: "task_queue",
+                durable: true,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null
+            );
+            var messageDetails = sale.Items.Select(item => $"{productDetails[item.ProductId].Product.Name} (Quantity: {item.Quantity})");
+            var message = $"New sale processed for customer {customer.Name} with ID {sale.Id}. Items sold: {string.Join(", ", messageDetails)}.";
+            var body = Encoding.UTF8.GetBytes(message);
+
+            var properties = new BasicProperties { Persistent = true };
+
+            await channel.BasicPublishAsync(exchange: string.Empty, routingKey: "task_queue", mandatory: true, basicProperties: properties, body: body);
+
+            Console.WriteLine($" [x] Sent {message}");
+
         }
         catch (Exception ex)
         {
@@ -182,6 +205,8 @@ public class SalesController : ControllerBase
             item => item.ProductId,
             item => productDetails.ContainsKey(item.ProductId) ? productDetails[item.ProductId].Product.Name : "Unknown Product"
         );
+
+
 
         return CreatedAtAction(
             nameof(GetByIdAsync),

@@ -17,6 +17,10 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Cata
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Microsoft.OpenApi.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Bson.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\MongoDB.Driver.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.Core.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.Extensions.Http.dll
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\RabbitMQ.Client.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\SharpCompress.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Snappier.dll
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -32,6 +36,7 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Cata
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.csproj.CoreCompileInputs.cache
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.MvcApplicationPartsAssemblyInfo.cs
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.MvcApplicationPartsAssemblyInfo.cache
+D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\scopedcss\bundle\Play.Catalog.Service.styles.css
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\staticwebassets.build.json
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\staticwebassets.development.json
@@ -48,7 +53,3 @@ D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Cata
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.pdb
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.genruntimeconfig.cache
 D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\ref\Play.Catalog.Service.dll
-D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\obj\Debug\net9.0\Play.Catalog.Service.sourcelink.json
-D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.dll
-D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.Core.dll
-D:\DESAIN ARSITEKTUR MICROSERVICES\Project\POS System\Play.Catalog\src\Play.Catalog.Service\bin\Debug\net9.0\Polly.Extensions.Http.dll
