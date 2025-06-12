@@ -67,4 +67,3 @@ A Point of Sale (POS) system implemented using a microservices architecture, bui
    - Catalog Service: http://localhost:5001/swagger
    - Customer Service: http://localhost:5002/swagger
    - Sales Service: http://localhost:5003/swagger
-     ## Data Models
